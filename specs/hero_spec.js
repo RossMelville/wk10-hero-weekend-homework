@@ -36,7 +36,11 @@ describe("Hero Object", function(){
     hero.reduceHealth(10);
     hero.increaseHealth(5);
     assert.strictEqual(hero.health, 95);
-  })
+  });
+
+  it("Should start with dead set to false", function(){
+    assert.strictEqual(hero.dead, false);
+  });
 
 
 })

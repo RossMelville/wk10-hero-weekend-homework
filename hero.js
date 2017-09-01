@@ -1,6 +1,8 @@
 var Hero = function(name, health, food){
   this.name = name;
   this.health = health;
+  this.maxHealth = 100;
+  this.dead = false;
   this.favouriteFood = food;
   this.tasks = [];
 };
