@@ -28,6 +28,12 @@ Hero.prototype = {
 
   addTask: function(task){
     this.tasks.push(task);
+  },
+
+  sortTasksByDifficulty: function(){
+    this.tasks.sort(function(taskA, taskB){
+      return taskA.difficulty - taskB.difficulty;
+    }).reverse()
   }
 
 };
