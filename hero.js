@@ -8,6 +8,10 @@ var Hero = function(name, health, food){
 Hero.prototype = {
   sayName: function(){
     return "My name is " + this.name;
+  },
+
+  reduceHealth: function(decreaseValue){
+    this.health -= decreaseValue;
   }
 
 };
