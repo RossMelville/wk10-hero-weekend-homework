@@ -19,7 +19,11 @@ Hero.prototype = {
   },
 
   eat: function(food){
-    this.health += food.replenishment;
+    if(this.favouriteFood === food.name){
+      this.health += (food.replenishment * 1.5)
+    } else {
+      this.health += food.replenishment;
+    }
   }
 
 };
