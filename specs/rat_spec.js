@@ -15,6 +15,11 @@ describe("Rat Object", function(){
     assert.strictEqual(rat.dead, false);
   });
 
+  it("Should be able to reduce health", function(){
+    rat.reduceHealth(5);
+    assert.strictEqual(rat.health, 5);
+  });
+
 
 
 })
