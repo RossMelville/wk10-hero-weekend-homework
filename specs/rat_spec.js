@@ -11,6 +11,10 @@ describe("Rat Object", function(){
     assert.strictEqual(rat.health, 10);
   });
 
+  it("Should start with dead as false", function() {
+    assert.strictEqual(rat.dead, false);
+  });
+
 
 
 })
