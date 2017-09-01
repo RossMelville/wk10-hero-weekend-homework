@@ -31,9 +31,12 @@ describe("Hero, Task and Food integration", function(){
     assert.strictEqual(link.tasks[0], task1);
   });
 
-  // it("Sort hero tasks by difficulty", function(){
-
-  // })
+  it("Sort hero tasks by difficulty", function(){
+    link.addTask(task2);
+    link.addTask(task3);
+    link.addTask(task1);
+    assert.deepStrictEqual(link.sortTasks(difficulty), [task1, task2, task3])
+  })
 
 
 })
