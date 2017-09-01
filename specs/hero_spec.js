@@ -23,6 +23,10 @@ describe("Hero Object", function(){
     assert.deepEqual(hero.tasks, [])
   });
 
+  it ("Should be able to say name", function(){
+    assert.strictEqual(hero.sayName(), "My name is Batman" )
+  });
+
 
 
 })
