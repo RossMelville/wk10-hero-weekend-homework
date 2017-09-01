@@ -4,3 +4,6 @@ var Hero = function(name, health, food){
   this.favouriteFood = food;
   this.tasks = [];
 }
+
+
+module.exports = Hero;
