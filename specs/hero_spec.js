@@ -52,5 +52,10 @@ describe("Hero Object", function(){
     assert.strictEqual(hero.dead, true);
   });
 
+  it("When heros health increased it cant go past max health", function(){
+    hero.increaseHealth(10);
+    assert.strictEqual(hero.health, 100);
+  })
+
 
 })
