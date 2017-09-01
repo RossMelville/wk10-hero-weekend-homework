@@ -23,6 +23,9 @@ Hero.prototype = {
     this.health += increaseValue;
     if(this.health <= 0){
       this.dead = true;
+    };
+    if(this.health > this.maxHealth){
+      this.health = this.maxHealth;
     }
   },
 
