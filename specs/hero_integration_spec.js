@@ -18,5 +18,11 @@ describe("Hero, Task and Food integration", function(){
     assert.strictEqual(link.health, 55)
   });
 
+  it("Hero health increased by 1.5*replenishment value when favourite food consumed", function(){
+    link.reduceHealth(50);
+    link.eat(apple);
+    assert.strictEqual(link.health, 65);
+  })
+
 
 })
