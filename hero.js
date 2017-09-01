@@ -56,6 +56,14 @@ Hero.prototype = {
         return 0;
       }
     })
+  },
+
+  taskCompleted: function(task){
+    this.tasks.forEach(function(job){
+      if(job === task){
+        job.completed();
+      }
+    })
   }
 
 };
