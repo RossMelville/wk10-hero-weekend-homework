@@ -42,5 +42,10 @@ describe("Hero Object", function(){
     assert.strictEqual(hero.dead, false);
   });
 
+  it("Can set dead to true", function(){
+    hero.setToDead();
+    assert.strictEqual(hero.dead, true);
+  })
+
 
 })

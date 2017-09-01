@@ -8,7 +8,7 @@ Rat.prototype = {
   reduceHealth: function(decreaseValue){
     this.health -= decreaseValue;
     if(this.health <= 0){
-      this.dead = true;
+      this.setToDead();
     }
   },
 
