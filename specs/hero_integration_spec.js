@@ -67,8 +67,17 @@ describe("Hero, Task and Food integration", function(){
     link.addTask(task3);
     link.taskCompleted(task1);
     link.taskCompleted(task3);
-    assert.deepStrictEqual(link.completedTasks(), [task1, task3]);
+    assert.deepStrictEqual(link.CompletedTasks(true), [task1, task3]);
   });
+
+  it("Show hero tasks that are uncompleted", function(){
+    link.addTask(task1);
+    link.addTask(task2);
+    link.addTask(task3);
+    link.taskCompleted(task1);
+    link.taskCompleted(task3);
+    assert.deepStrictEqual(link.CompletedTasks(false), [task2]);
+  })
 
 
 })
