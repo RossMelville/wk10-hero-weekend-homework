@@ -15,18 +15,22 @@ describe("Hero Object", function(){
     assert.strictEqual(hero.health, 100)
   });
 
-  it ("Should have favourite food", function(){
+  it("Should have favourite food", function(){
     assert.strictEqual(hero.favouriteFood, "Pizza")
   });
 
-  it ("Should have empty task array to start", function(){
+  it("Should have empty task array to start", function(){
     assert.deepEqual(hero.tasks, [])
   });
 
-  it ("Should be able to say name", function(){
+  it("Should be able to say name", function(){
     assert.strictEqual(hero.sayName(), "My name is Batman" )
   });
 
+  it("Should be able to reduce health", function(){
+    hero.reduceHealth(10);
+    assert.strictEqual(hero.health, 90)
+  });
 
 
 })
