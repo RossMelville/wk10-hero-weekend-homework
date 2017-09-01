@@ -19,6 +19,10 @@ describe("Hero Object", function(){
     assert.strictEqual(hero.favouriteFood, "Pizza")
   });
 
+  it ("Should have empty task array to start", function(){
+    assert.deepEqual(hero.tasks, [])
+  });
+
 
 
 })
