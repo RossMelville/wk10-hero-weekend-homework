@@ -15,4 +15,8 @@ describe("Task Object", function(){
     assert.strictEqual(task.difficulty, 10)
   });
 
+  it("Should have priority", function(){
+    assert.strictEqual(task.priority, 1)
+  });
+
 })
