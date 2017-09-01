@@ -97,6 +97,12 @@ describe("Hero, Task and Food integration", function(){
     assert.strictEqual(link.health, 95);
   });
 
+  it("When favourite food poisoned and eaten reduces health * 1.5 replenishment value", function(){
+    rat1.touchFood(apple);
+    link.eat(apple);
+    assert.strictEqual(link.health, 85);
+  });
+
 
 
 
