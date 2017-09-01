@@ -86,6 +86,11 @@ describe("Hero, Task and Food integration", function(){
     assert.strictEqual(apple.poisonous, true);
   });
 
+  it("Poisoned food replenishment value changed to negative value", function(){
+    rat1.touchFood(apple);
+    assert.strictEqual(apple.replenishment, -10);
+  });
+
 
 
 
