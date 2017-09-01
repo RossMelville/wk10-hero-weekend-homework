@@ -32,5 +32,11 @@ describe("Hero Object", function(){
     assert.strictEqual(hero.health, 90)
   });
 
+  it("Should be able to increase health", function(){
+    hero.reduceHealth(10);
+    hero.increaseHealth(5);
+    assert.strictEqual(hero.health, 95);
+  })
+
 
 })
