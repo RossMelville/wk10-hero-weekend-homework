@@ -77,6 +77,10 @@ Hero.prototype = {
       }
     })
     return sortedArray;
+  },
+
+  setToDead: function(){
+    this.dead = true;
   }
 
 
