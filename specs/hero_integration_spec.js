@@ -1,6 +1,7 @@
 var Hero = require("../hero.js");
 var Task = require("../task.js");
 var Food = require("../food.js");
+var Rat = require("../rat.js");
 var assert = require("assert");
 
 describe("Hero, Task and Food integration", function(){
@@ -12,6 +13,7 @@ describe("Hero, Task and Food integration", function(){
     task1 = new Task("Save Zelda", 10, 1, "Big pat on the back");
     task2 = new Task("Defeat Ganon", 9, 2, "Pint in the pub");
     task3 = new Task("Collect Master Sword", 3, 3, "Better kill rate");
+    rat1 = new Rat();
   });
 
   it("Hero can eat food to replenish health", function(){
@@ -77,7 +79,14 @@ describe("Hero, Task and Food integration", function(){
     link.taskCompleted(task1);
     link.taskCompleted(task3);
     assert.deepStrictEqual(link.CompletedTasks(false), [task2]);
-  })
+  });
+
+  it("Rat can touch food and then becomes poisonous", function(){
+    rat1.touchFood(apple);
+    assert.strictEqual(apple.poisonous, true);
+  });
+
+
 
 
 })

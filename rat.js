@@ -14,6 +14,10 @@ Rat.prototype = {
 
   setToDead: function(){
     this.dead = true;
+  },
+
+  touchFood: function(food){
+    food.poisonous = true;
   }
 
 
