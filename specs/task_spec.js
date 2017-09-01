@@ -11,4 +11,8 @@ describe("Task Object", function(){
     assert.strictEqual(task.description, "Catch the Joker")
   });
 
+  it("Should have difficulty", function(){
+    assert.strictEqual(task.difficulty, 10)
+  });
+
 })
