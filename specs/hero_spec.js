@@ -9,7 +9,11 @@ describe("Hero Object", function(){
 
   it("Should have name", function(){
     assert.strictEqual(hero.name, "Batman")
-  })
+  });
+
+  it("Should have health", function(){
+    assert.strictEqual(hero.health, 100)
+  });
 
 
 
