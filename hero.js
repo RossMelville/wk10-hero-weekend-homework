@@ -12,6 +12,10 @@ Hero.prototype = {
 
   reduceHealth: function(decreaseValue){
     this.health -= decreaseValue;
+  },
+
+  increaseHealth: function(increaseValue){
+    this.health += increaseValue;
   }
 
 };
