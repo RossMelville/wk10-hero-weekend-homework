@@ -4,15 +4,15 @@ var assert = require("assert");
 describe("Food object", function(){
 
   beforeEach(function(){
-    pizza = new Food("Pizza", 10);
+    food = new Food("Pizza", 10);
   });
 
   it("Should have a name", function(){
-    assert.strictEqual(pizza.name, "Pizza")
+    assert.strictEqual(food.name, "Pizza")
   });
 
   it("Should have replenishment value", function(){
-    assert.strictEqual(pizza.replenishment, 10)
+    assert.strictEqual(food.replenishment, 10)
   });
 
 
