@@ -45,7 +45,12 @@ describe("Hero Object", function(){
   it("Can set dead to true", function(){
     hero.setToDead();
     assert.strictEqual(hero.dead, true);
-  })
+  });
+
+  it("When heros health gets to 0 dead set to true", function(){
+    hero.reduceHealth(100);
+    assert.strictEqual(hero.dead, true);
+  });
 
 
 })

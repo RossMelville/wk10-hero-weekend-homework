@@ -22,9 +22,9 @@ Hero.prototype = {
 
   eat: function(food){
     if(this.favouriteFood === food.name){
-      this.health += (food.replenishment * 1.5)
+      this.increaseHealth(food.replenishment * 1.5)
     } else {
-      this.health += food.replenishment;
+      this.increaseHealth(food.replenishment);
     }
   },
 
