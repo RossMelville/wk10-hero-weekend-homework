@@ -4,6 +4,16 @@ var Food = function(name, replenishment){
   this.poisonous = false;
 };
 
+Food.prototype = {
+  
+  nowPoisonous: function(){
+    this.poisonous = true;
+  }
+
+
+
+}
+
 
 
 
