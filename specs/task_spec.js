@@ -23,4 +23,9 @@ describe("Task Object", function(){
     assert.strictEqual(task.reward, "Big pat on the back")
   });
 
+  it("Should be able to set task as complete", function(){
+    task.completed();
+    assert.strictEqual(task.complete, true)
+  });
+
 })
