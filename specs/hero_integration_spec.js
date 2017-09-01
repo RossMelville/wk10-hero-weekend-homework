@@ -12,7 +12,11 @@ describe("Hero, Task and Food integration", function(){
     task1 = new Task("Save Zelda", 10, 1, "Big pat on the back");
   });
 
-  
+  it("Hero can eat food to replenish health", function(){
+    link.reduceHealth(50);
+    link.eat(bread);
+    assert.strictEqual(link.health, 55)
+  });
 
 
 })
