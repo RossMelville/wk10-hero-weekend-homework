@@ -91,6 +91,12 @@ describe("Hero, Task and Food integration", function(){
     assert.strictEqual(apple.replenishment, -10);
   });
 
+  it("When poisoned food consumed health decreases", function(){
+    rat1.touchFood(bread);
+    link.eat(bread);
+    assert.strictEqual(link.health, 95);
+  });
+
 
 
 
