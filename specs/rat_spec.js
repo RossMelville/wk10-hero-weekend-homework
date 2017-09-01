@@ -20,6 +20,11 @@ describe("Rat Object", function(){
     assert.strictEqual(rat.health, 5);
   });
 
+  it("Should be able to set rat to dead", function(){
+    rat.setToDead();
+    assert.strictEqual(rat.dead, true);
+  });
+
 
 
 })
