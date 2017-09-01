@@ -64,7 +64,20 @@ Hero.prototype = {
         job.completed();
       }
     })
+  },
+
+  CompletedTasks: function(status){
+    var sortedArray = [];
+
+    this.tasks.forEach(function(task){
+      if(task.complete === status){
+        sortedArray.push(task);
+      }
+    })
+    return sortedArray;
   }
+
+
 
 };
 
