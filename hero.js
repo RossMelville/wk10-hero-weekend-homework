@@ -40,6 +40,23 @@ Hero.prototype = {
     this.tasks.sort(function(taskA, taskB){
       return taskA.priority - taskB.priority;
     })
+  },
+
+  sortTasksByReward: function(){
+    this.tasks.sort(function(a, b){
+      var taskA = a.reward.toUpperCase();
+      var taskB = b.reward.toUpperCase();
+
+      if(taskA < taskB){
+        return -1;
+      } 
+      if(taskA > taskB){
+        return 1;
+      }
+      else{
+        return 0;
+      }
+    })
   }
 
 };

@@ -52,6 +52,7 @@ describe("Hero, Task and Food integration", function(){
     link.addTask(task2);
     link.addTask(task3);
     link.sortTasksByReward();
+    console.log("Sorted tasks:", link.tasks);
     assert.deepStrictEqual(link.tasks, [task3, task1, task2]);
   })
 
