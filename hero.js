@@ -24,6 +24,10 @@ Hero.prototype = {
     } else {
       this.health += food.replenishment;
     }
+  },
+
+  addTask: function(task){
+    this.tasks.push(task);
   }
 
 };
