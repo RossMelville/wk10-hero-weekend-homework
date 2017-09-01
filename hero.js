@@ -16,6 +16,10 @@ Hero.prototype = {
 
   increaseHealth: function(increaseValue){
     this.health += increaseValue;
+  },
+
+  eat: function(food){
+    this.health += food.replenishment;
   }
 
 };
