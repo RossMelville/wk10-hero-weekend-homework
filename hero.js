@@ -46,7 +46,6 @@ Hero.prototype = {
     this.tasks.sort(function(a, b){
       var taskA = a.reward.toUpperCase();
       var taskB = b.reward.toUpperCase();
-
       if(taskA < taskB){
         return -1;
       } 

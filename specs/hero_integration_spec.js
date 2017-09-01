@@ -52,9 +52,22 @@ describe("Hero, Task and Food integration", function(){
     link.addTask(task2);
     link.addTask(task3);
     link.sortTasksByReward();
-    console.log("Sorted tasks:", link.tasks);
     assert.deepStrictEqual(link.tasks, [task3, task1, task2]);
-  })
+  });
+
+  it("can change a heros task to completed", function(){
+    link.addTask(task1);
+    link.taskCompleted(task1);
+    assert.strictEqual(link.tasks[0].complete, true);
+  });
+
+  // it("Show hero tasks that are completed", function(){
+  //   link.addTask(task1);
+  //   link.addTask(task2);
+  //   link.addTask(task3);
+
+  //   link.completedTasks();
+  // })
 
 
 })
