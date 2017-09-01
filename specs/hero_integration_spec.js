@@ -36,9 +36,16 @@ describe("Hero, Task and Food integration", function(){
     link.addTask(task3);
     link.addTask(task1);
     link.sortTasksByDifficulty();
-    console.log("Sorted Task array:", link.tasks);
     assert.deepStrictEqual(link.tasks, [task1, task2, task3]);
-  })
+  });
+
+  it("Sort hero tasks by priority", function(){
+    link.addTask(task3);
+    link.addTask(task1);
+    link.addTask(task2);
+    link.sortTasksByPriority();
+    assert.deepStrictEqual(link.tasks, [task1, task2, task3]);
+  });
 
 
 })
