@@ -17,8 +17,7 @@ Rat.prototype = {
   },
 
   touchFood: function(food){
-    food.poisonous = true;
-    food.replenishment = -food.replenishment;
+    food.nowPoisonous();
   }
 
 

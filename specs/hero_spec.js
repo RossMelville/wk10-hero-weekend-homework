@@ -4,11 +4,11 @@ var assert = require("assert");
 describe("Hero Object", function(){
 
   beforeEach(function(){
-    hero = new Hero("Batman", 100, "Pizza");
+    hero = new Hero("Link", 100, "Pizza");
   });
 
   it("Should have name", function(){
-    assert.strictEqual(hero.name, "Batman")
+    assert.strictEqual(hero.name, "Link")
   });
 
   it("Should have health", function(){
@@ -24,7 +24,7 @@ describe("Hero Object", function(){
   });
 
   it("Should be able to say name", function(){
-    assert.strictEqual(hero.sayName(), "My name is Batman" )
+    assert.strictEqual(hero.sayName(), "My name is Link" )
   });
 
   it("Should be able to reduce health", function(){

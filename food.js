@@ -8,6 +8,7 @@ Food.prototype = {
   
   nowPoisonous: function(){
     this.poisonous = true;
+    this.replenishment = -this.replenishment;
   }
 
 
